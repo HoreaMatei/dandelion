@@ -1,0 +1,78 @@
+.navButton {
+    text-decoration: none;
+    color: rgb(19, 18, 18);
+    font-weight: 400;
+    padding-top: 5px;
+    font-size: 22px;
+    
+    flex-grow: 1;
+    display: flex;
+    transition: all .2s ease-in-out; 
+  
+    box-sizing: border-box;
+   
+    justify-content: center;
+    font-family: "Crimson Text", serif;
+    letter-spacing: 0.5px;
+    min-height: 2em;
+    align-items: center;
+    
+    
+    margin-right: 50px;
+    color: rgba(123,146,61,255);
+
+   
+}
+
+.navButton:hover{
+    transform: scale(1.1); 
+}
+
+.main-container{
+    
+    display: inline;
+    height: 60px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+   
+    padding: 0;
+    margin: 0;
+    
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    top: 0rem;
+    z-index: 100;
+    
+  
+}
+
+.menuContainer{
+    display: flex;
+    
+}
+
+.homeButton{
+    
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    background-size:cover ;
+    margin-left: 20px;
+
+}
+
+.homeButton:hover{
+    transform: scale(1.1); 
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }

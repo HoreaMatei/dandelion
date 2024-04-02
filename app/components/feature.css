@@ -1,0 +1,53 @@
+.product-div{
+  margin-bottom: 60px;
+  transition: ease-in-out,0.8s;
+
+}
+
+
+.product-image{
+height: 470px;
+width: 380px;
+text-align: center;
+
+overflow: hidden;
+z-index: 10;
+
+}
+
+
+
+.image{
+    height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  
+  overflow: hidden;
+  z-index: -1;
+
+
+  
+}
+
+.image:hover{
+    transform: scale(1.03); 
+    transition: all .2s ease-in-out; 
+    opacity: 85%;
+    cursor: pointer;
+    overflow: hidden;
+z-index: -1;
+
+
+}
+
+
+.titlu-buchet{
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  margin-top: 10px;
+  color: rgb(92, 92, 92);
+  
+}
