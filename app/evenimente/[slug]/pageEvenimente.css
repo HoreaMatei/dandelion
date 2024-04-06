@@ -1,0 +1,157 @@
+.product-image1{
+    height: 770px;
+    width: 630px;
+    margin: auto;
+    margin-top: 8rem;
+    overflow: hidden;
+
+    }
+
+
+    .product-image1 img{
+        
+            height: 100%;
+          width: 100%;
+          object-fit: cover;
+          display: block;
+        
+          
+          
+          
+        
+    }
+
+
+
+.product-name{
+    color: black;
+    margin-top: 10rem;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    text-align: left;
+    
+}
+
+.product{ 
+    display:  flex;
+    
+    flex-direction: column;
+    width: 40%;
+   text-align: left;
+  margin: auto;
+  margin-left:0 ;
+  margin-top: 0;
+  margin-bottom:0 ;
+   color: rgb(104, 100, 100);
+   
+ 
+
+}
+p{
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+span{
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+
+    border-bottom:none;
+}
+
+.product-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
+
+}
+
+.product-details {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.product-details *{
+    border-bottom: 1px solid rgb(32, 32, 32); 
+  }
+
+
+    .main1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+      
+       
+    }   
+
+.social-media{
+    display: flex;
+     justify-content: space-between;
+    border-bottom: 0;
+    align-items: center;
+ 
+
+ 
+}
+
+.social-media *{
+    border-bottom: 0;
+    
+
+}
+
+.social-media-icons{
+    display: flex;
+
+
+}
+
+.social-media img{
+    width: 50px;
+    height: 50px;
+    border-bottom: 0;
+    
+}
+
+body {
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;  
+ }
+
+ .product-section{
+    display: flex;
+
+ 
+ }
+
+ .p{
+    margin-bottom: 100px;
+ }
+
+
+ .no-border-bottom{
+    border-bottom: 0;
+ }
+
+ .contacte-subdiv{
+    display: flex;
+    justify-content: space-between;
+  
+ }
+
+ .contacte-subdiv *{
+    border-bottom: 0;
+ }
+

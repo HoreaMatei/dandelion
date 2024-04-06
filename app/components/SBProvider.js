@@ -11,10 +11,12 @@ import Teaser from "./Teaser";
 import Grid from "./Grid";
  import Feature from "./Feature";
  import Grid2 from "./Grid2";
+ import Feature2 from "./Feature2";
 const components = {
   grid: Grid, 
   page: Page,
-  product: Product
+  product: Product,
+  feature2: Feature2
 };
  
 storyblokInit({

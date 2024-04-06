@@ -2,7 +2,7 @@ import '../globals.css'
 import Navbar from '../navbar/Navbar';
 import { getStoryblokApi} from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
-import './evenimente.css'
+import ContactBar from '../components/ContactBar';
 
 
 export default async function Home() {

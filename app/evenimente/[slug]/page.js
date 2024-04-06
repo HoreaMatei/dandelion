@@ -1,14 +1,11 @@
-
 import React from 'react'
 import Carousel from '@/app/components/Carousel';
 import Navbar from "@/app/navbar/Navbar";
-import './page.css'
+import './pageEvenimente.css'
 import ContactBar from "@/app/components/ContactBar";
-import insta from './insta.png'
-import facebook from './facebook.png'
+
 import { getStoryblokApi} from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
-import Carousel from '@/app/components/Carousel';
 
 
 
@@ -88,8 +85,8 @@ export default async function Home ({params}) {
      
         
         <div className='social-media-icons'>
-        <img src={insta.src}/>
-         <img src={facebook.src}/>
+        <img src='{insta.src}'/>
+         <img src='{facebook.src}'/>
         </div>
        </div>
 
@@ -132,7 +129,8 @@ export default async function Home ({params}) {
 
  
 export async function fetchData() {
-  let sbParams = { version: "draft" };
+  let sbParams = { version: "published" };
  
   const storyblokApi = getStoryblokApi();
   return storyblokApi.get(`cdn/stories/evenimente`, sbParams, {cache: "no-store"} )}
+ 
