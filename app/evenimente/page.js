@@ -3,7 +3,7 @@ import Navbar from '../navbar/Navbar';
 import { getStoryblokApi} from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
 import ContactBar from '../components/ContactBar';
-
+import '../globals.css'
 
 export default async function Home() {
   const { data } = await fetchData();

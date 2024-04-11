@@ -1,7 +1,7 @@
 import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
 import StoryblokProvider from "./components/StoryblokProvider";
 import ContactBar from "./components/ContactBar";
- 
+ import './globals.css'
 storyblokInit({
   accessToken: "OQ09pa2LLqe7rgabggVtmQtt",
   use: [apiPlugin]
@@ -18,9 +18,11 @@ export default function RootLayout({ children }) {
 </style>
 
      
-             <body>{children}</body>
-             <ContactBar/>
+             <body>{children}
+            </body>
+             
         </html>
+        
     </StoryblokProvider>
   )
 }

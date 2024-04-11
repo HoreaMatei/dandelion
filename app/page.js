@@ -7,7 +7,7 @@ import Navbar from "./navbar/Navbar";
 const revalidate = true
 import "./globals.css"
 import Cover from "./components/cover/Cover";
-
+import ContactBar from "./components/ContactBar";
 
 
 
@@ -21,6 +21,7 @@ export default function Home() {
     <div className="horea" >
   
            <Cover/>
+           <ContactBar/>
         
   
     </div>

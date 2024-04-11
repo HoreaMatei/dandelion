@@ -8,6 +8,7 @@ import insta from './insta.png'
 import facebook from './facebook.png'
 import { getStoryblokApi} from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
+import Link from 'next/link'
 
 
 
@@ -87,8 +88,14 @@ export default async function Home ({params}) {
      
         
         <div className='social-media-icons'>
+        <Link href="https://www.instagram.com/floraria.dandelion?igsh=MXN3aDgyZHlraW83MA%3D%3D&utm_source=qr" target='blank'>
         <img src={insta.src}/>
-         <img src={facebook.src}/>
+        </Link>
+
+        <Link href='https://www.facebook.com/?locale=ro_RO'>
+        <img src={facebook.src}/>
+        </Link>
+         
         </div>
        </div>
 

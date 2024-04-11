@@ -89,6 +89,9 @@ height: 100vh;
     
 
 }
+.aranjamente, .evenimente h2{
+    margin-bottom: auto;
+text-align: center;}
 
 .aranjamente{
     background-image: url(./coverAranjamente.jpeg);
@@ -111,10 +114,222 @@ height: 100vh;
 }
 
 
+@media (max-width:1675px){
+    .productss{
+        display: flex;
+       flex-wrap: wrap;
+      justify-content: space-between;
+     align-items: center;
+    width: 70rem;
+    margin: auto;
+    height: 100vh;
+    
+    
+    }
+
+    .aranjamente, .evenimente{
+        outline: 3px solid white;
+        outline-offset: -20px;
+        font-family: "Roboto", sans-serif;
+        font-size: 70px;
+        font-weight:700 ;
+        display: flex;
+        padding-top:200px ;
+       justify-content: center;
+        color: white;
+       
+       
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
+        background-position: center;
+        cursor: pointer;
+        
+    
+    }
+
+}
+
+
+@media (max-width:1450px){
+
+    .productss{
+        
+     
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: auto;
+
+    }
+
+
+    .aranjamente, .evenimente{
+        outline: 3px solid white;
+        outline-offset: -20px;
+        font-family: "Roboto", sans-serif;
+        font-size: 70px;
+        font-weight:700 ;
+        display: flex;
+        padding-top:200px ;
+   
+    
+        color: white;
+    
+      
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
+        background-position: center;
+        cursor: pointer;
+        
+    
+    }
+}
+
+@media (max-width:1250px){
+    .productss{
+        
+     
+        display: block;
+      
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        height: 100%;
+
+    }
+
+    .aranjamente, .evenimente{
+        margin: auto;
+        margin-top: 80px;
+        
+    }
+}
+
+@media (max-width:900px){
+    .productss{
+        
+        display: block;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+      
+        height: 100%;
+    
+
+
+    }
+    .aranjamente, .evenimente{
+        margin: auto;
+        margin-top: 80px;
+       
+        display: flex;
+        justify-content: center;
+        
+        height: 75vh;
+        margin-bottom: 40px;
+    
+        
+    }
+}
 
 
 
-  
 
 
 
+
+@media (max-width: 730px){
+    .cover-image p{
+
+        margin-right: 10px;
+        width: 70%;
+        font-family: "Crimson Text", serif;
+        letter-spacing: 0.5px;
+        font-size: 20px;
+        font-weight: 700;
+        opacity: 100%;
+        text-shadow: 2px 1px 5px black;
+        margin-bottom: 200px;
+        margin-right: 40px;
+        
+    }
+    .productss{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+        flex-shrink: 5;
+     
+     
+   
+    
+    }
+
+    .aranjamente, .evenimente{
+        font-size: 11vw;
+    }
+    
+}
+@media (max-width:600px){
+
+    .aranjamente, .evenimente{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 70vw;
+        height: 100vw;
+        margin-bottom: 40px;
+        font-size: 10vw;
+      
+   
+    }
+
+}
+
+@media (max-width:440px){
+
+
+    .cover-image p{
+
+        margin-right: 10px;
+        width: 70%;
+        font-family: "Crimson Text", serif;
+        letter-spacing: 0.5px;
+        font-size: 15px;
+        font-weight: 700;
+        opacity: 100%;
+        text-shadow: 2px 1px 5px black;
+        margin-bottom: 200px;
+        margin-right: 40px;
+        
+    }
+
+    .productss{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+
+        
+    }
+    
+    .aranjamente, .evenimente{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+       
+      
+        margin-bottom: 40px;
+    }
+   
+}
+
+@media(max-width:300px){
+    .aranjamente, .evenimente{
+      display: flex;
+      justify-content: baseline;
+    }
+}

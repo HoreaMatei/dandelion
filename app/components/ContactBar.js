@@ -3,6 +3,7 @@ import './contactBar.css'
 
  const ContactBar = () => {
   return (
+   
     <footer className='contact'>
        <div className='contact-sub-div'>
        <div>
