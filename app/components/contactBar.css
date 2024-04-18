@@ -26,6 +26,7 @@
     justify-content: space-between;
     width: 70%;
     margin: auto;
+    flex-wrap: wrap;
     
 }
 
@@ -52,10 +53,36 @@
 
 }
 
-@media (max-width:600px){
+@media (max-width:768px){
     .contact{bottom: 0;
     left: 0;
     right: 0;
-    position: relative;}
+    position: relative;
+    height: 200px;
 }
 
+.contact-sub-div li{
+    text-align: center;
+    width: 200px;
+    
+}
+
+.contact-sub-div div{
+    margin-top: 15px;
+}
+
+}
+
+@media (max-width:573px){
+    .contact{
+        height: 350px;
+        display: flex;
+     
+      
+    }
+    .contact-sub-div {
+        display: flex;
+        justify-content: center;
+    
+    }
+}

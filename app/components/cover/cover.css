@@ -240,7 +240,7 @@ text-align: center;}
 
 
 
-@media (max-width: 730px){
+@media (max-width: 768px){
     .cover-image p{
 
         margin-right: 10px;
@@ -261,7 +261,7 @@ text-align: center;}
         justify-content: center;
         width: 90%;
         height: 100%;
-        flex-shrink: 5;
+        
      
      
    
@@ -270,66 +270,9 @@ text-align: center;}
 
     .aranjamente, .evenimente{
         font-size: 11vw;
-    }
-    
-}
-@media (max-width:600px){
-
-    .aranjamente, .evenimente{
-        margin: auto;
-        display: flex;
-        justify-content: center;
         width: 70vw;
         height: 100vw;
-        margin-bottom: 40px;
-        font-size: 10vw;
-      
-   
-    }
-
-}
-
-@media (max-width:440px){
-
-
-    .cover-image p{
-
-        margin-right: 10px;
-        width: 70%;
-        font-family: "Crimson Text", serif;
-        letter-spacing: 0.5px;
-        font-size: 15px;
-        font-weight: 700;
-        opacity: 100%;
-        text-shadow: 2px 1px 5px black;
-        margin-bottom: 200px;
-        margin-right: 40px;
-        
-    }
-
-    .productss{
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        height: 100%;
-
         
     }
     
-    .aranjamente, .evenimente{
-        margin: auto;
-        display: flex;
-        justify-content: center;
-       
-      
-        margin-bottom: 40px;
-    }
-   
-}
-
-@media(max-width:300px){
-    .aranjamente, .evenimente{
-      display: flex;
-      justify-content: baseline;
-    }
 }
