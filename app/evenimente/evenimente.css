@@ -7,6 +7,7 @@
 .product-div{
     margin-bottom: 60px;
     transition: ease-in-out,0.8s;
+    
   
   }
   
@@ -15,6 +16,7 @@
   height: 470px;
   width: 380px;
   text-align: center;
+
   
   overflow: hidden;
   z-index: 10;
@@ -24,6 +26,7 @@
   
   
   .image{
+    margin-right: 20px;
       height: 100%;
     width: 100%;
     object-fit: cover;

@@ -1,6 +1,8 @@
 .product-div{
   margin-bottom: 60px;
   transition: ease-in-out,0.8s;
+  margin-right: 20px;
+  margin-left: 20px;
 
 }
 
@@ -50,6 +52,14 @@ z-index: -1;
   margin-top: 10px;
   color: rgb(92, 92, 92);
   
+}
+
+
+@media(max-width:900px){
+  .product-div{
+    margin-right:0 ;
+    margin-left: 0;
+  }
 }
 
 @media (max-width:480px){

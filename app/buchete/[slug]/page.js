@@ -9,6 +9,7 @@ import facebook from './facebook.png'
 import { getStoryblokApi} from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
 import Link from 'next/link'
+import '../../globals.css'
 
 
 
@@ -74,12 +75,7 @@ export default async function Home ({params}) {
               L-V: 10:00-18:00
             </p>
           </div>
-
-
-
          </div>
-
-
 
         <div className='social-media'>
          <div>
@@ -99,29 +95,17 @@ export default async function Home ({params}) {
         </div>
        </div>
 
-
-
         </div>
 
-
-
         </div>
-
-
 
      </div>
   
-      
-     
-  
-    
-
-
-
     </div>
    
     
     </div>
+    <ContactBar/>
    
      </div>
   )
@@ -129,14 +113,6 @@ export default async function Home ({params}) {
 
 
 
-
-
-
-
-
-
-
- 
 export async function fetchData() {
   let sbParams = { version: "published" };
  

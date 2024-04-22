@@ -20,7 +20,7 @@ export default async function Home() {
          <Navbar/>
       <StoryblokStory story={data.story} />
       
-    
+    <ContactBar/>
     </div>
   );
 }
