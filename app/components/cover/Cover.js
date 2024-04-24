@@ -2,7 +2,7 @@
 
 
 import Navbar from '../../navbar/Navbar'
-
+import Link from 'next/link'
 import '../../globals.css'
 import './cover.css'
 
@@ -53,7 +53,7 @@ export const Cover = () => {
           
             <div className='cover-image'>
                 <p className='descriere-site'>
-                Poetul John Keats spunea :" Un lucru frumos este o bucurie vesnica". Sunt Rica si-mi place sa daruiesc bucurie prin buchete unice. Le creez cu drag si cu convingerea ca vor fi un motiv de incantare. Sunt o participanta activa la diferite proiecte internationale. De exemplu, anul trecut am lucrat impreuna cu ....la decorarea primariei din.... Am propria plantatie de trandafiri,......,...... din care aleg cu grija si atentie la detalii fiecare floare pentru buchetul dorit. Va astept cu portile deschise in boutique-ul din Batos sau pe site unde puteti gasi modele din creatiile mele personale. Pe curand!
+                Poetul John Keats spunea :" Un lucru frumos este o bucurie vesnica". Sunt Rica si-mi place sa daruiesc bucurie prin buchete unice. Le creez cu drag si cu convingerea ca vor fi un motiv de incantare. Am propria plantatie de trandafiri,......,...... din care aleg cu grija si atentie la detalii fiecare floare pentru buchetul dorit. Va astept cu portile deschise in boutique-ul din Batos sau pe site unde puteti gasi modele din creatiile mele personale. Pe curand!
        
                 </p>
           </div>
@@ -63,16 +63,20 @@ export const Cover = () => {
            <RevealOnScroll >
            <div className='aranjamente'>
            
-            <h2>Aranjamente</h2>
+            <h2> Aranjamente</h2>
            </div>
            </RevealOnScroll >
      
            <RevealOnScroll>
-           <div className='evenimente'>
+          <Link href="/evenimente">
+          <div className='evenimente'>
+          <h2>Evenimente</h2>
+          </div>
+          </Link> 
         
             
-            <h2>Evenimente</h2>
-           </div>
+            
+           
            </RevealOnScroll>  
 
 

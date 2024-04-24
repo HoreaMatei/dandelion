@@ -32,6 +32,7 @@
     text-shadow: 2px 1px 5px black;
     margin-bottom: 10vh;
     margin-right: 40px;
+    z-index: 1;
     
 }
 

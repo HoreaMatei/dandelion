@@ -1,16 +1,33 @@
-import React from 'react'
+ 'use client'
 import Link from 'next/link'
 import "./navbar.css"
 import home from './Dandelion5.png'
 import '../globals.css'
 
+import './burger.css'
+import React , {useState}from 'react'
+
 
 const Navbar = () => {
-  function toggleMobileMenu(menu){
- 
-   
+  const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
+  const [menu_class, setMenuClass] = useState("menu hidden")
+  const [isMenuClicked, setIsMenuClicked] = useState(false)
 
+  // toggle burger menu change
+  const updateMenu = () => {
+      if(!isMenuClicked) {
+          setBurgerClass("burger-bar clicked")
+          setMenuClass("menu visible")
+      }
+      else {
+          setBurgerClass("burger-bar unclicked")
+          setMenuClass("menu hidden")
+      }
+      setIsMenuClicked(!isMenuClicked)
   }
+
+
+
   return ( 
     <div className= "main-container">
       <Link href="/"><img src={home.src} alt="home" className="homeButton"/></Link>
@@ -19,23 +36,25 @@ const Navbar = () => {
      <Link className= "navButton"href="/evenimente" >Evenimente</Link>
      <Link className= "navButton" href= "/buchete">Buchete</Link>
     </div>
-    <div className='hamburger-icon' onClick={toggleMobileMenu(this)}>
-      <div className='bar1'></div>
-      <div className='bar2'></div>
-      <div className='bar3'></div>
-      <ul className='mobile-menu'>
-        <li>
-          <a href='/evenimente'>
-            Evenimente
-          </a>
-        </li>
-        <li>
-          <a href='/aranjamente'>
-            Aranjamente
-          </a>
-        </li>
-      </ul>
-    </div>
+
+    <div className='mainmain' style={{width: '100%', height: '100vh'}}>
+            <nav>
+                <div className="burger-menu" onClick={updateMenu}>
+                    <div className={burger_class} ></div>
+                    <div className={burger_class} ></div>
+                    <div className={burger_class} ></div>
+                </div>
+            </nav>
+            <div className={menu_class}>
+            <Link className= "burgerButton"href="/evenimente" >Evenimente</Link>
+     
+            <Link className= "burgerButton" href= "/buchete">Buchete</Link>
+            </div>
+
+        </div>
+   
+
+    
     </div>
   )
 }
