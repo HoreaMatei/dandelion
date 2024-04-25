@@ -7,7 +7,7 @@ import insta from '../../logos/insta.png'
 import facebook from '../../logos/facebook.png'
 import { getStoryblokApi} from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
-import "../../buchete/[slug]/page.css"
+import "../../aranjamente/[slug]/page.css"
 import Link from 'next/link';
 
 
