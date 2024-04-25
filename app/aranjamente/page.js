@@ -1,9 +1,9 @@
+
 import '../globals.css'
 import Navbar from '../navbar/Navbar';
 import { getStoryblokApi} from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
 import ContactBar from '../components/ContactBar';
-import '../globals.css'
 
 
 export default async function Home() {
@@ -18,9 +18,8 @@ export default async function Home() {
   */}
          <Navbar/>
       <StoryblokStory story={data.story} />
-
-      <ContactBar/>
-    
+      
+    <ContactBar/>
     </div>
   );
 }
@@ -29,4 +28,4 @@ export async function fetchData() {
   let sbParams = { version: "published" };
  
   const storyblokApi = getStoryblokApi();
-  return storyblokApi.get(`cdn/stories/evenimente`, sbParams, {cache: "no-store"} )}
+  return storyblokApi.get(`cdn/stories/home`, sbParams, {cache: "no-store"} )}

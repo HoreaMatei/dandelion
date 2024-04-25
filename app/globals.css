@@ -8,6 +8,8 @@ html{
   height: 100%;
   box-sizing: border-box;}
 
+main{width: 100%;}
+
 body {
   position: relative;
   margin: 0;
@@ -15,6 +17,8 @@ body {
 width: 100%;
 
 box-sizing: inherit;
+margin: 0px;
+width: 100%;
 }
 
 
@@ -32,15 +36,13 @@ box-sizing: inherit;
 .horea{
   position: relative;
   width: 100%;
+  height: 100%;
   align-self: center;
   text-align: center;
   margin-top: 50px;
  
 }
-body{
-  margin: 0px;
-  width: 100%;
-}
+
 
 *{
   margin: 0px; 
@@ -58,7 +60,7 @@ html, body {
   clear: both;
  
 
-  min-height: 400px; 
+  min-height: 100%; 
 }
 
 .okok{
@@ -73,7 +75,11 @@ html, body {
   align-self: center;
   }
 
+.main{
+  height: 100%;
+  position: relative;
 
+}
 
 @media (max-width:1250px){
   html{

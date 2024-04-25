@@ -33,8 +33,9 @@ const Navbar = () => {
       <Link href="/"><img src={home.src} alt="home" className="homeButton"/></Link>
 
     <div className="menuContainer">
+    <Link className= "navButton" href= "/aranjamente">Aranjamente</Link>
      <Link className= "navButton"href="/evenimente" >Evenimente</Link>
-     <Link className= "navButton" href= "/buchete">Buchete</Link>
+   
     </div>
 
     <div className='mainmain' style={{width: '100%', height: '100vh'}}>
@@ -46,9 +47,10 @@ const Navbar = () => {
                 </div>
             </nav>
             <div className={menu_class}>
+            <Link className= "burgerButton boxShadow" href= "/aranjamente">Aranjamente</Link>
             <Link className= "burgerButton"href="/evenimente" >Evenimente</Link>
      
-            <Link className= "burgerButton" href= "/buchete">Buchete</Link>
+            
             </div>
 
         </div>

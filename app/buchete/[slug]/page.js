@@ -4,8 +4,8 @@ import Carousel from '@/app/components/Carousel';
 import Navbar from "@/app/navbar/Navbar";
 import './page.css'
 import ContactBar from "@/app/components/ContactBar";
-import insta from './insta.png'
-import facebook from './facebook.png'
+import insta from '../../logos/insta.png'
+import facebook from '../../logos/facebook.png'
 import { getStoryblokApi} from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
 import Link from 'next/link'

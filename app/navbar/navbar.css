@@ -37,7 +37,7 @@
     background-color: white;
     width: 100%;
     display: flex;
-flex-wrap: nowrap;
+
     justify-content:space-between;
     position: relative;
    
@@ -45,7 +45,8 @@ flex-wrap: nowrap;
     margin: 0;
     
     overflow: hidden;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     position: fixed;
     top: 0rem;
     z-index: 100;

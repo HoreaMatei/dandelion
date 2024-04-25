@@ -1,14 +1,14 @@
 import React from 'react'
 import Carousel from '@/app/components/Carousel';
 import Navbar from "@/app/navbar/Navbar";
-
+import './page.css'
 import ContactBar from "@/app/components/ContactBar";
 import insta from '../../logos/insta.png'
 import facebook from '../../logos/facebook.png'
 import { getStoryblokApi} from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
-import "../../buchete/[slug]/page.css"
-import Link from 'next/link';
+import Link from 'next/link'
+import '../../globals.css'
 
 
 
@@ -74,12 +74,7 @@ export default async function Home ({params}) {
               L-V: 10:00-18:00
             </p>
           </div>
-
-
-
          </div>
-
-
 
         <div className='social-media'>
          <div>
@@ -87,7 +82,7 @@ export default async function Home ({params}) {
          </div>
      
         
-         <div className='social-media-icons'>
+        <div className='social-media-icons'>
         <Link href="https://www.instagram.com/floraria.dandelion?igsh=MXN3aDgyZHlraW83MA%3D%3D&utm_source=qr" target='blank'>
         <img src={insta.src}/>
         </Link>
@@ -99,25 +94,12 @@ export default async function Home ({params}) {
         </div>
        </div>
 
-
-
         </div>
 
-
-
         </div>
-
-
 
      </div>
   
-      
-     
-  
-    
-
-
-
     </div>
    
     
@@ -130,17 +112,12 @@ export default async function Home ({params}) {
 
 
 
-
-
-
-
-
-
-
- 
 export async function fetchData() {
   let sbParams = { version: "published" };
  
   const storyblokApi = getStoryblokApi();
-  return storyblokApi.get(`cdn/stories/evenimente`, sbParams, {cache: "no-store"} )}
- 
+  return storyblokApi.get(`cdn/stories/home`, sbParams, {cache: "no-store"} )}
+
+
+
+  //<img src={data.story.content.body[1].columns[params.slug].image[this.index].filename} key={1}/>

@@ -1,7 +1,10 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react/rsc";
-import "./feature.css" 
+import "./product.css" 
 import Link from 'next/link'
-import Carousel from "./Carousel";
+import "../globals.css"
+
+ 
+
 const mappedImages = ({blok}) =>{
     let mapp = blok.image.map(i => i )
     console.log(mapp)
@@ -27,6 +30,7 @@ const  Product = ({ blok }) => (
 
  
     </div>
+    <h1 className="titlu-buchet">{blok.title}</h1>
 
 
 

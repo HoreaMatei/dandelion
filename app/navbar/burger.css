@@ -47,7 +47,7 @@ nav {
 
 .menu {
     
-    box-shadow: 0 -5px 5px -5px #333;
+    
 
 
 
@@ -57,15 +57,16 @@ nav {
     
     justify-content: center;
     width: 100%;
-    height:14vh;
+    height:15vh;
     background-color: white;
     color: rgba(123,146,61,255);
 
     top: 60px;
-    z-index: -1;
-
-
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
+    z-index: 1;
+    border-top: 1px solid rgba(123,146,61,255);
+    border-bottom: 2px solid rgba(123,146,61,255);
+    
+    box-shadow: 0 3px 5px -2px #000000;
 }
 
 
@@ -77,12 +78,14 @@ nav {
     font-size: 30px;
     font-family: "Crimson Text", serif;
     letter-spacing: 0.5px;
+    text-align: center;
 
-
-
-box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 }
 
+.boxShadow{
+    border-bottom: 1px solid rgba(123,146,61,255);
+
+}
 /* ------------- sliding menu ------------------ */
 .hidden {
     display: none;
