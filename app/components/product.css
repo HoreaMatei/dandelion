@@ -1,82 +1,124 @@
-.product-div{
-    margin-bottom: 60px;
-    transition: ease-in-out,0.8s;
-    margin-right: 20px;
-    margin-left: 20px;
-  
-  }
-  
-  
-  
-  .product-image{
-  height: 470px;
-  width: 380px;
+.product_div_1 {
+  transition: ease-in-out, 0.8s;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+
+  margin-top: 8%;
+}
+
+.informations {
+  height: 50vh;
+  width: 40vw;
+  margin-left: 70px;
+  height: 80vh;
+}
+
+.detalii {
+  font-family: "Crimson Text", serif;
+}
+
+.detalii_subdiv {
+  width: 150px;
+  font-size: 20px;
+  margin-top: 20px;
+
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgb(100, 100, 100);
+}
+
+.detalii_subdiv:hover {
+  background: rgba(100, 100, 100, 0.623);
+}
+
+.detalii_subdiv:active {
+  transform: scale(0.9);
+}
+.product-image {
+  height: 100px;
+  width: 580px;
   text-align: center;
-  
+
   overflow: hidden;
   z-index: 10;
-  
-  }
-  
-  
-  
-  .image{
-      height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    
-    overflow: hidden;
-    z-index: -1;
-  
-  
-    
-  }
-  
-  .image:hover{
-      transform: scale(1.03); 
-      transition: all .2s ease-in-out; 
-      opacity: 85%;
-      cursor: pointer;
-      overflow: hidden;
-  z-index: -1;
-  
-  
-  }
-  
-  
-  .titlu-buchet{
-    font-family: "Crimson Text", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 25px;
-    margin-top: 10px;
-    color: rgb(92, 92, 92);
-    
-  }
-  
-  
-  @media(max-width:900px){
-    .product-div{
-      margin-right:0 ;
-      margin-left: 0;
-    }
-  }
-  
-  @media (max-width:480px){
-    .product-image{
-     height: 400px;
-     width: 20rem;
-     text-align: center;
-     width: 300px;
-     overflow: hidden;
-     z-index: 1;
-     margin-right: auto;
-    }
-   
-   }
-  
-  
-  
+}
 
-  
+.titlu-buchet_over_image {
+  font-size: 30px;
+  position: absolute;
+  font-family: "Crimson Text", serif;
+  color: white;
+  margin-left: 10px;
+  margin-top: 29%;
+  z-index: 100;
+}
+
+.descriere {
+  width: 35vw;
+  text-align: left;
+  font-size: clamp(0.5rem, 1.6vw, 1.2rem);
+  margin-top: 10px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+
+  overflow: hidden;
+  z-index: -1;
+  filter: brightness(0.85);
+}
+
+.image:hover {
+  transform: scale(1.03);
+  transition: all 0.2s ease-in-out;
+  opacity: 85%;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: -1;
+}
+
+@media (max-width: 900px) {
+  .product-div {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .descriere {
+    width: 90vw;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+    margin: auto;
+  }
+
+  .informations {
+    width: 90%;
+
+    margin: auto;
+  }
+
+  .detalii_subdiv {
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-image {
+    height: 400px;
+    width: 20rem;
+    text-align: center;
+    width: 300px;
+    overflow: hidden;
+    z-index: 1;
+    margin-right: auto;
+  }
+}

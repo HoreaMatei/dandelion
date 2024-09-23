@@ -1,94 +1,78 @@
-.product-div{
+.product-div {
   margin-bottom: 60px;
-  transition: ease-in-out,0.8s;
+  transition: ease-in-out, 0.8s;
   margin-right: 20px;
   margin-left: 20px;
-  
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 520px;
 }
 
+.product-image {
+  height: 500px;
+  width: 380px;
+  text-align: center;
 
-
-.product-image{
-height: 470px;
-width: 380px;
-text-align: center;
-
-overflow: hidden;
-z-index: 10;
-
+  overflow: hidden;
+  z-index: 10;
 }
 
-
-
-.image{
-    height: 100%;
+.image {
+  height: 100%;
   width: 100%;
   object-fit: cover;
   display: block;
-  
+
   overflow: hidden;
   z-index: -1;
-
-
-  
 }
 
-.image:hover{
-    transform: scale(1.03); 
-    transition: all .2s ease-in-out; 
-    opacity: 85%;
-    cursor: pointer;
-    overflow: hidden;
-z-index: -1;
-
-
+.image:hover {
+  transform: scale(1.03);
+  transition: all 0.5s ease-in-out;
+  opacity: 85%;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: -1;
 }
 
-
-.titlu-buchet{
+.titlu-buchet {
   font-family: "Crimson Text", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 25px;
   margin-top: 10px;
   color: rgb(92, 92, 92);
-  
 }
 
-
-@media(max-width:900px){
-  .product-div{
-    margin-right:0 ;
+@media (max-width: 900px) {
+  .product-div {
+    margin-right: 0;
     margin-left: 0;
+    margin-bottom: -10px;
   }
 }
 
-@media (max-width:480px){
-  .product-image{
-   height: 400px;
-   width: 20rem;
-   text-align: center;
-   width: 300px;
-   overflow: hidden;
-   z-index: 10;
-   
+@media (max-width: 480px) {
+  .product-image {
+    height: 400px;
+    width: 20rem;
+    text-align: center;
+    width: 300px;
+    overflow: hidden;
+    z-index: 10;
   }
- 
- }
+}
 
-
-
-@media (max-width:310px){
-  .product-image{
+@media (max-width: 310px) {
+  .product-image {
     height: 400px;
     width: 265px;
     text-align: center;
-    
+
     overflow: hidden;
     z-index: 10;
-    
-    }
-
+  }
 }
-

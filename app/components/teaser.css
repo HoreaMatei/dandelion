@@ -1,8 +1,17 @@
-.teaser{
-    font-family: "Crimson Text", serif;
-    letter-spacing: 0.5px;
-    font-size: 40px;
-    font-weight: 400;
-    margin-top: 80px;
-    margin-bottom: 20px;
+.teaser {
+  font-family: "Crimson Text", serif;
+  letter-spacing: 0.5px;
+  font-size: 60px;
+  width: 100%;
+  background-image: url("/cover4.jpg");
+  background-position: 60%;
+  font-weight: 400;
+  height: 160px;
+  opacity: 90%;
+
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }

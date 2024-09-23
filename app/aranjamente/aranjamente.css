@@ -1,0 +1,19 @@
+.okok {
+  width: 70vw;
+}
+
+.okok {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  justify-self: center;
+  margin: auto;
+
+  align-self: center;
+  margin-top: 80px;
+}
+
+.contact {
+  margin: 0;
+}

@@ -4,60 +4,155 @@
 
 @tailwind utilities;
 
-.product-div{
-    margin-bottom: 60px;
-    transition: ease-in-out,0.8s;
-    
-  
-  }
-  
-  
-  .product-image{
-  height: 470px;
-  width: 380px;
+.okok {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  justify-self: center;
+  margin: auto;
+
+  align-self: center;
+}
+
+.image_section {
+  margin-top: 100px;
+}
+
+.product_div_0 {
+  transition: ease-in-out, 0.8s;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100vw;
+  margin: auto;
+  height: 70vh;
+  margin-top: 40px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.26);
+  z-index: 100;
+}
+
+.product_div_1 {
+  height: 80vh;
+  padding-top: 100px;
+  margin-bottom: 60px;
+  transition: ease-in-out, 0.8s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+
+  background-color: rgb(238, 236, 236);
+}
+
+.product-image {
+  height: 600px;
+  width: 500px;
   text-align: center;
 
-  
   overflow: hidden;
   z-index: 10;
-  
-  }
-  
-  
-  
-  .image{
-    margin-right: 20px;
-      height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    
-    overflow: hidden;
-    z-index: -1;
-  
-  
-    
-  }
-  
-  .image:hover{
-      transform: scale(1.03); 
-      transition: all .2s ease-in-out; 
-      opacity: 85%;
-      cursor: pointer;
-      overflow: hidden;
+}
+
+.image {
+  margin-right: 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+
+  overflow: hidden;
   z-index: -1;
-  
-  
+}
+
+.image:hover {
+  transform: scale(1.03);
+  transition: all 0.4s ease-in-out;
+  opacity: 90%;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: -1;
+}
+.titlu-buchet {
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  margin-top: 10px;
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 920px) {
+  .product-image {
+    width: 500px;
+    height: 500px;
+    margin: auto;
   }
-  
-  
-  .titlu-buchet{
-    font-family: "Crimson Text", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 25px;
+
+  .descriere {
+    width: 350px;
+    font-size: 17px;
+  }
+
+  .product_div_1 {
+    padding-right: 50px;
+  }
+}
+@media (max-width: 766px) {
+  .product_div_1,
+  .product_div_0 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    text-align: left;
+  }
+
+  .product_div_0 {
+    padding-bottom: 20px;
+  }
+
+  .product-image {
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+  }
+
+  .titlu-buchet {
+    display: none;
+  }
+  .descriere {
+    width: 90%;
+    margin: auto;
     margin-top: 10px;
-    color: rgb(92, 92, 92);
-    
   }
-  
+  .product_div_1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+  .product-image {
+    width: 90vw;
+    margin: auto;
+  }
+  .image {
+    width: 95%;
+    margin: auto;
+  }
+
+  .informations {
+    height: fit-content;
+  }
+  .contact {
+    margin-top: 0;
+  }
+}

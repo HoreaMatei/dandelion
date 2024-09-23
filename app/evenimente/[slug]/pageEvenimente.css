@@ -1,157 +1,144 @@
-.product-image1{
-    height: 770px;
-    width: 630px;
-    margin: auto;
-    margin-top: 8rem;
-    overflow: hidden;
+.galerie_foto_img {
+  height: 470px;
+  width: 390px;
+  text-align: center;
 
-    }
-
-
-    .product-image1 img{
-        
-            height: 100%;
-          width: 100%;
-          object-fit: cover;
-          display: block;
-        
-          
-          
-          
-        
-    }
-
-
-
-.product-name{
-    color: black;
-    margin-top: 10rem;
-    font-family: "Crimson Text", serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 40px;
-    text-align: left;
-    
+  overflow: hidden;
 }
 
-.product{ 
-    display:  flex;
-    
-    flex-direction: column;
-    width: 40%;
-   text-align: left;
+.product-name {
+  font-size: 48px;
+}
+
+.galerie_foto_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+
+  overflow: hidden;
+  z-index: -1;
+}
+
+.galerie_foto_img img:hover {
+  transform: scale(1.03);
+  transition: all 0.5s ease-in-out;
+  opacity: 85%;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.galerie_foto_title {
+  width: 300px;
   margin: auto;
-  margin-left:0 ;
-  margin-top: 0;
-  margin-bottom:0 ;
-   color: rgb(104, 100, 100);
-   
- 
-
+  color: black;
+  font-size: 36px;
+  text-align: center;
 }
-p{
-    font-family: "Crimson Text", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
-}
-span{
-    font-family: "Crimson Text", serif;
-    font-weight: 700;
-    font-style: normal;
-    color: black;
-
-    border-bottom:none;
+.galerie_foto {
+  width: 70vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 3rem;
 }
 
-.product-page{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 100vh;
+.product-page {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  margin-top: -50px;
+  width: 100vw;
+  height: fit-content;
 }
 
-.product-details {
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.section_title_big {
+  font-family: "Crimson Text", serif;
+  letter-spacing: 0.5px;
+  font-size: 40px;
+  width: 100%;
+  background-image: url("/cover4.jpg");
+  background-position: 60%;
+  font-weight: 400;
+  height: 120px;
+  opacity: 90%;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
 }
 
+p {
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(18px, 1.15vw, 40px);
+}
 
+@media (max-width: 1600px) {
+  .galerie_foto {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-.product-details *{
-    border-bottom: 1px solid rgb(32, 32, 32); 
+@media (max-width: 1110px) {
+  .product {
+    margin-top: 40px;
+    border-top: 1px solid rgb(146, 146, 146);
+  }
+  .galerie_foto {
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 1fr;
   }
 
-
-    .main1{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 100px;
-      
-       
-    }   
-
-.social-media{
+  .galerie_foto_img {
+    width: 100%;
+    margin: auto;
+  }
+  .image_section {
+    width: 90%;
+    margin: auto;
+  }
+  .product-page {
     display: flex;
-     justify-content: space-between;
-    border-bottom: 0;
+    justify-content: center;
     align-items: center;
- 
+  }
 
- 
+  .product-image1 {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .image_class {
+    margin-bottom: 0;
+  }
+
+  .product-name {
+    margin-top: 30px;
+  }
+  p {
+    font-size: 25px;
+  }
+
+  .product-details {
+    margin-bottom: 0;
+  }
 }
 
-.social-media *{
-    border-bottom: 0;
-    
-
+@media (max-width: 700px) {
+  p {
+    font-size: 20px;
+  }
 }
-
-.social-media-icons{
-    display: flex;
-
-
-}
-
-.social-media img{
-    width: 50px;
-    height: 50px;
-    border-bottom: 0;
-    
-}
-
-body {
-    min-height: 400px;
-    margin-bottom: 100px;
-    clear: both;  
- }
-
- .product-section{
-    display: flex;
-
- 
- }
-
- .p{
-    margin-bottom: 100px;
- }
-
-
- .no-border-bottom{
-    border-bottom: 0;
- }
-
- .contacte-subdiv{
-    display: flex;
-    justify-content: space-between;
-  
- }
-
- .contacte-subdiv *{
-    border-bottom: 0;
- }
-
