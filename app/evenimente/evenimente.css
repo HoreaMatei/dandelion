@@ -151,6 +151,7 @@
 
   .informations {
     height: fit-content;
+    margin-bottom: 30px;
   }
   .contact {
     margin-top: 0;

@@ -141,4 +141,7 @@ p {
   p {
     font-size: 20px;
   }
+  .image_section {
+    margin-bottom: 30px;
+  }
 }
