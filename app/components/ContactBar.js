@@ -11,7 +11,7 @@ const ContactBar = () => {
         </div>
         <div>
           <li>ADRESA DE E-MAIL</li>
-          <li>blabla@gmail.com</li>
+          <li>mateirica43@yahoo.com</li>
         </div>
         <div>
           <li>ADRESA</li>
