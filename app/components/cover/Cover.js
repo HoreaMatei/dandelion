@@ -76,9 +76,10 @@ export const Cover = () => {
                 Vreti sa luminati ziua cuiva? Ofera-i un buchet frumos! La
                 Ffloraria Dandelion, avem o selectie mare de flori si
                 aranjamente realizate cu pasiune si mult suflet, pentru fiecare
-                ocazie. Florile noastre provin direct din Olanda si ne permit sa
-                oferim zilnic selectii proaspete si superbe. Vizitati site-ul
-                nostru si vedeti ce avem de oferit!{" "}
+                ocazie. Florile noastre provin atat din productia proprie cat si
+                direct din Olanda si ne permit sa oferim zilnic selectii
+                proaspete si superbe. Vizitati site-ul nostru si vedeti ce avem
+                de oferit!{" "}
               </p>
             </div>
           </RevealOnScroll>

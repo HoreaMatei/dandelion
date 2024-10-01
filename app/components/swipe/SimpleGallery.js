@@ -24,7 +24,7 @@ export default function SimpleGallery(props) {
         <a
           className="galerie_foto_img"
           href={image}
-          data-pswp-width={1600}
+          data-pswp-width={1650}
           data-pswp-height={1900}
           key={props.galleryID + "-" + index}
           target="_blank"
